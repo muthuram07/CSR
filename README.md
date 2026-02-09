@@ -373,9 +373,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 For support and questions:
-- **Email**: support@csr-denial-bot.com
-- **Documentation**: [Wiki](https://github.com/your-org/csr-denial-bot/wiki)
-- **Issues**: [GitHub Issues](https://github.com/your-org/csr-denial-bot/issues)
+- **Email**: muthuramansaravanan31@gmail.com
 
 ---
 
