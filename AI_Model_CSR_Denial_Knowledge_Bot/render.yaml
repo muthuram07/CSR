@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: csr-ai-model
+    runtime: python3
+    pythonVersion: 3.11
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn csr_service:app"
+    environment:
+      USE_OLLAMA: "false"  # Free hosting can't run Ollama locally, use embeddings only
+      OLLAMA_URL: ""  # Leave empty
+      OLLAMA_MODEL: ""  # Leave empty
+      EMBEDDING_MODEL: "sentence-transformers/paraphrase-MiniLM-L3-v2"  # Lighter model for free hosting
+      TOP_K: "3"  # Reduce from 5 to save memory
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChi 
+   ldItemCommand
+ 

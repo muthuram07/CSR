@@ -1,0 +1,48 @@
+# Top-level .gitignore for the CSR workspace
+
+# Java / Maven
+**/target/
+*.class
+
+# Node / Frontend
+/node_modules/
+/build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+.ipynb_checkpoints/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+
+# Logs and env
+*.log
+.env
+.env.*
+
+# Misc
+dist/
+*.egg-info/
+pip-wheel-metadata/
+.pytest_cache/
+
+# OS / Editor artifacts
+Thumbs.db
+ehthumbs.db
+.vs/
+
+# Coverage
+coverage/
+coverage.xml
+htmlcov/
+
+# Packaging helpers
+.pdm-python/

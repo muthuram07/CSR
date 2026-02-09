@@ -1,0 +1,43 @@
+# Ignore compiled Java classes and build folders
+target/
+**/target/
+*.class
+
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Build / artifacts
+/build/
+node_modules/
+*.log
+.DS_Store
+.env
+*.egg-info/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+
+# OS / Editor artifacts
+Thumbs.db
+ehthumbs.db
+.vs/
+
+# Coverage
+coverage/
+coverage.xml
+htmlcov/
+
+# Packaging helpers
+.pdm-python/

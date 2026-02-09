@@ -1,0 +1,362 @@
+/* AI Status Component Styles */
+.ai-status-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ai-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.ai-status-header h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.test-all-btn {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.test-all-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.test-all-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.service-name {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.service-key {
+  font-family: 'Courier New', monospace;
+  background: #f3f4f6;
+  color: #64748b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.service-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-icon {
+  font-size: 1.2rem;
+}
+
+.status-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.service-limits {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.service-limits h4 {
+  margin: 0 0 0.75rem 0;
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.limits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.limit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.limit-label {
+  font-weight: 600;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.limit-value {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 0.9rem;
+}
+
+.test-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f0f9ff;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+}
+
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.test-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.test-status.working {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.test-status.failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.test-status.error {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.test-error {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  color: #991b1b;
+  font-size: 0.85rem;
+}
+
+.no-services {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px dashed #cbd5e1;
+}
+
+.no-services-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.no-services h3 {
+  margin: 1rem 0;
+  color: #1e293b;
+  font-size: 1.5rem;
+}
+
+.no-services p {
+  color: #64748b;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.setup-instructions {
+  text-align: left;
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.setup-instructions h4 {
+  margin: 0 0 1rem 0;
+  color: #1e293b;
+}
+
+.setup-instructions ol {
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+  color: #374151;
+}
+
+.setup-instructions li {
+  margin-bottom: 0.5rem;
+}
+
+.api-keys-help {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.api-keys-help h5 {
+  margin: 0 0 0.75rem 0;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.api-keys-help ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.api-keys-help li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.ai-status-footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.usage-tips h4 {
+  margin: 0 0 1rem 0;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.usage-tips ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.usage-tips li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ai-status-container {
+    padding: 1rem;
+  }
+  
+  .ai-status-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .limits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .setup-instructions {
+    padding: 1rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .ai-status-container {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  }
+  
+  .service-card {
+    background: #374151;
+    border-color: #4b5563;
+  }
+  
+  .service-name {
+    color: #f1f5f9;
+  }
+  
+  .service-key {
+    background: #1f293b;
+    color: #cbd5e1;
+  }
+  
+  .no-services {
+    background: #374151;
+    border-color: #4b5563;
+  }
+  
+  .setup-instructions {
+    background: #1f293b;
+  }
+  
+  .usage-tips li {
+    color: #e5e7eb;
+  }
+}
